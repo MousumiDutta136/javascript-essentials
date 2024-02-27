@@ -53,3 +53,89 @@ console.log('hello'.slice(1,5))
 let variable1;
 console.log(typeof null)//type is 'object'
 console.log(typeof variable1)//type is 'undefined'
+
+const numberToString = String(7);
+console.log(typeof numberToString)
+const numberToBoolean = Boolean(numberToString);
+console.log(typeof numberToBoolean)
+
+let ticket={
+  from: 'Kitchener Go',
+  end: 'Guelph Go',
+  price:100
+}
+
+console.log(ticket.from,ticket.end, ticket.price);
+
+let books = [
+              { title: "Speaking JavaScript", 
+              author: "Axel Rauschmayer", 
+              pages: 460 }, 
+              { title: "Programming JavaScript Applications", 
+              author: "Eric Elliot", 
+              pages: 254 }, 
+              { title: "Understanding ECMAScript 6", 
+              author: "Nicholas C. Zakas", 
+              pages: 352 } 
+            ];
+  let newBook = {
+    title: "Learning JavaScript Design Patterns", 
+              author: "Addy Osmani", 
+              pages: 254
+  }
+            books.push(newBook)
+            console.log(books);
+
+            console.log(books.slice(-2));    
+
+
+            let name;
+            let age;
+            {
+            let height;
+            // 2
+            { // 2
+            { let weight; // 1 // 2
+            console.log(name); // 1 // 2
+            }
+            // 2
+               console.log(name); // 2
+            }  
+          }
+
+          let height = 180;
+          {
+          let height = 200;
+          height = height + 10;
+          }
+          console.log(height);
+          
+          let x = 10 / 100;
+{
+console.log(typeof (x));
+}
+
+let lx = "Alice" + 10;
+console.log(lx)
+
+let summer = ["June", "July", "August"];
+
+summer[1] = 7;
+console.log(summer[1])
+
+let animals = ["dog", /*"cat",*/ "hamster"];
+//let animals1 = ["dog", //"cat",// "hamster"];
+
+let decision = window.confirm("Is it ok?")
+console.log(decision);
+
+let remove = confirm("Remove all data?");
+let message = remove ? "Deleting Data" : "Cancelled"
+console.log(message);
+
+let username = window.prompt("What is your name?", "John Doe");
+promtedname = username ? username : "anonymous";
+let userage = prompt("Hello " + promtedname + " how old are you?");
+alert(promtedname + " is " + userage + " years old");
+
+                 
